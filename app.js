@@ -3,6 +3,14 @@ let count = 0;
 document.getElementById("add-btn").addEventListener("click", function () {
     count++;
     const inputValue = document.getElementById("input-value").value;
+    // console.log(isNaN('c'));
+    // console.log(isNaN(5));
+    // console.log(isNaN('7'));
+    if (!isNaN(inputValue)) {
+        // console.log(inputValue);
+        alert("please give a string")
+        return
+    }
     if (inputValue == "") {
         alert("Please enter a value");
     } else {
